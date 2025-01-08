@@ -5,7 +5,7 @@
   "scripts": {
     "Regression": "npx playwright test --grep @authregression",
     "SmokeTest": "npx playwright test --grep @Smoke --headless",
-    "Loginregression": "npx playwright test --grep @loginreg --headed"
+    "Loginregression": "npx playwright test --grep @loginreg"
   },
   "keywords": [],
   "author": "",
