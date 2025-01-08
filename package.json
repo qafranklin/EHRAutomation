@@ -1,0 +1,22 @@
+{
+  "name": "ehrautomation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "Regression": "npx playwright test --grep @authregression",
+    "SmokeTest": "npx playwright test --grep @Smoke --headless",
+    "Loginregression": "npx playwright test --grep @loginreg --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2",
+    "allure-playwright": "^3.0.7"
+  },
+  "dependencies": {
+    "faker": "^6.6.6"
+  }
+}
