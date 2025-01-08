@@ -32,9 +32,9 @@ test('@loginreg Signup New Account', async ({ page }) => {
   const credUsername = `${lastName.toLowerCase()}user`;
 
   // Step 1: Navigate Page
-  await page.goto('https://bizboxw22s:8083//app/index/index.html#/login');
+  await page.goto('http://v9-dev.southeastasia.cloudapp.azure.com:8083/app/index/index.html#/login');
   await expect(page).toHaveTitle('One Login');
-  await expect(page).toHaveURL('https://bizboxw22s:8083//app/index/index.html#/login');
+  await expect(page).toHaveURL('http://v9-dev.southeastasia.cloudapp.azure.com:8083/app/index/index.html#/login');
   console.log('Login page validated.');
 
   // Step 2: Click the Sign Up Link
@@ -45,7 +45,7 @@ test('@loginreg Signup New Account', async ({ page }) => {
 
   // Step 3: Verify the sign-up page
   await expect(page.locator('h3')).toHaveText('Create an Account');
-  await expect(page).toHaveURL('https://bizboxw22s:8083//app/index/index.html#/sign-up');
+  await expect(page).toHaveURL('http://v9-dev.southeastasia.cloudapp.azure.com:8083/app/index/index.html#/sign-up');
 
   // Step 4: Ensure Sign-Up button is disabled initially
   await expect(page.locator('#signUpFormSubmitButton')).toBeDisabled();

@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 test('@loginreg Log In Invalid Account', async ({ page }) => {
 
-  let url = "http://localhost:83";
+  let url = "http://v9-dev.southeastasia.cloudapp.azure.com:8083";
   try {
     // Step 1: Navigate to Login Page
     await page.goto(url + '/app/index/index.html#/login');

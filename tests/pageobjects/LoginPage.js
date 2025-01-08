@@ -7,14 +7,14 @@ class LoginPage {
     this.usernameField = page.locator('#username');
     this.passwordField = page.locator('#password');
     this.loginButton = page.locator("button[type='submit']");
-    this.homePageUrl = 'https://bizboxw22s:8084/app/user/user.html#/visits';
+    this.homePageUrl = 'http://v9-dev.southeastasia.cloudapp.azure.com:8084/app/user/user.html#/visits';
     this.welcomeText = page.locator('text=Electronic Health Records');
     this.userFullName = page.locator("span[ng-bind='vm.user.fullName']");
   }
 
   // Step 1: Navigate to the login page
   async navigateToLoginPage() {
-    await this.page.goto('https://bizboxw22s:8083//app/index/index.html#/login');
+    await this.page.goto('http://v9-dev.southeastasia.cloudapp.azure.com:8083/app/index/index.html#/login');
     console.log('Navigate to login page');
   }
 
@@ -22,7 +22,7 @@ class LoginPage {
   async validateLoginPage() {
     await expect(this.page).toHaveTitle('One Login');
     console.log('Validate Page title: Passed');
-    await expect(this.page).toHaveURL('https://bizboxw22s:8083//app/index/index.html#/login');
+    await expect(this.page).toHaveURL('http://v9-dev.southeastasia.cloudapp.azure.com:8083/app/index/index.html#/login');
     console.log('Validate Page URL: Passed');
   }
 
@@ -35,7 +35,7 @@ class LoginPage {
 
   // Step 4: Fill the username field
   async fillUsername() {
-    await this.usernameField.fill('doctorhan');
+    await this.usernameField.fill('erza');
     console.log('Fill Username Field');
   }
 
