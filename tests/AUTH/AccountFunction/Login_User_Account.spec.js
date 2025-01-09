@@ -26,7 +26,7 @@ test('@loginreg Log In Existing Account', async ({ page }) => {
     await loginPage.validateHomePage();
 
     // Step 7: Validate the logged-in user
-    await loginPage.validateLoggedInUser('Erza  Scarlette');
+    await loginPage.validateLoggedInUser();
 
     // Step 8: Close the page
     await page.close();

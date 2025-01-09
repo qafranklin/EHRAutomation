@@ -71,6 +71,10 @@ class LoginPage {
     console.log('Validate Landing Page: Passed');
   }
 
+  async validateLoggedInUser(){
+    await expect(this.userFullName).toHaveText('Erza  Scarlette')
+  }
+
   
 }
 
